@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "PowerShellTestingHelpers", "PowerShellTestingHelpers.pssproj", "{A8C41614-C4E5-48CA-81B6-B16EFD224560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8C41614-C4E5-48CA-81B6-B16EFD224560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C41614-C4E5-48CA-81B6-B16EFD224560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C41614-C4E5-48CA-81B6-B16EFD224560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C41614-C4E5-48CA-81B6-B16EFD224560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C41614-C4E5-48CA-81B6-B16EFD224560}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{A8C41614-C4E5-48CA-81B6-B16EFD224560}.Test|Any CPU.Build.0 = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

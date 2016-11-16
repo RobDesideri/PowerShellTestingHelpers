@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a8c41614-c4e5-48ca-81b6-b16efd224560</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PowerShellTestingHelpers</RootNamespace>
+    <AssemblyName>PowerShellTestingHelpers</AssemblyName>
+    <Name>PowerShellTestingHelpers</Name>
+    <Author>Roberto Desideri</Author>
+    <CompanyName>RobDesideri</CompanyName>
+    <Copyright />
+    <Description />
+    <Version>0.1.0.0</Version>
+    <Guid>66d13573-3c5f-4f5d-8e3c-889f10635cba</Guid>
+    <FormatsToProcess />
+    <FunctionsToProcess />
+    <ModuleList />
+    <ModuleToProcess />
+    <NestedModules />
+    <TypesToProcess />
+    <ClrVersion>
+    </ClrVersion>
+    <PowerShellHostVersion />
+    <PowerShellVersion>v4</PowerShellVersion>
+    <ProcessorArchitecture />
+    <RequiredModules />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Test' ">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="docs\" />
+    <Folder Include="test\" />
+    <Folder Include="src\" />
+    <Folder Include="src\docs\" />
+    <Folder Include="src\script\" />
+    <Folder Include="src\script\private\" />
+    <Folder Include="src\script\public\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ScriptAnalyzerSettings.psd1" />
+    <Compile Include="src\PowerShellTestingHelpers.psd1" />
+    <Compile Include="src\PowerShellTestingHelpers.psm1" />
+    <Compile Include="src\script\public\Get-FakeFileList.ps1" />
+    <Compile Include="src\script\public\Get-FakeProcessList.ps1" />
+    <Compile Include="src\script\public\Get-FakeRandomPid.ps1" />
+    <Compile Include="test\PowerShellTestingHelpers.private.tests.ps1" />
+    <Compile Include="test\PowerShellTestingHelpers.public.tests.ps1" />
+    <Compile Include="test\PowerShellTestingHelpers.tests.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt" />
+    <Content Include="README.md" />
+    <Content Include="ReleaseNotes.md" />
+    <Content Include="src\README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build" />
+</Project>
